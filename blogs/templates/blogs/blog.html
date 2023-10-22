@@ -1,0 +1,15 @@
+{% extends "blogs/base.html" %}
+
+{% load static %}
+
+{% block content %}
+hello blog
+
+{% for blogs in blogs  %}
+
+<h2>{{blogs.title}}</h2>
+<p>{{blogs.description}}</p>
+
+
+{% endfor %}
+{% endblock %}
